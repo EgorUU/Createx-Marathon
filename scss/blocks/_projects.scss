@@ -1,0 +1,64 @@
+.container-projects {
+    .main-header-projects {
+        @include font(700,46px);
+        color: #1E212C;
+        padding-bottom: 60px;
+        padding-top: 120px;
+        text-align: start;
+    }
+    .projects_carts {
+        display: flex;
+        gap: 30px;
+        text-align: center;
+        h1 {
+            @include font(700,20px);
+            padding-bottom: 4px;
+            color: #1E212C;
+            padding-top: 16px;
+        }
+        p {
+            @include font(400,14px);
+            color: #787A80;
+            padding-bottom: 24px;
+        }
+        button {
+            width: 172px;
+            height: 44px;
+            border-radius: 4px;
+            border: 1px solid #FF5A30;
+            color: #FF5A30;
+            @include font(700,14px);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .projects__carts-item img {
+            border-radius: 4px 4px 0px 0px;
+        }
+    }
+    .projects__footer {
+        transform: translate(27%);
+        padding-top: 80px;
+        padding-bottom: 120px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        h1 {
+            @include font(700,28px);
+            color: #1E212C;
+        }
+        button {
+            width: 224px;
+            height: 52px;
+            @include font(700,14px);
+            background-color: #FF5A30;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+} 
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}   

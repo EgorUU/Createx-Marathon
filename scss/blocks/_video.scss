@@ -1,0 +1,29 @@
+.container__video {
+    text-align: center;
+    h1 {
+        @include font(700,46px);
+        color: #1E212C;
+        padding-top: 120px;
+        padding-bottom: 24px;
+    }
+    p {
+        @include font(400,18px);
+        color: #787A80;
+        margin-bottom: 60px;
+    }
+    .main_video {
+        margin: 0 auto;
+        position: relative;
+        .video {
+            filter: brightness(60%);
+            border-radius: 4px;
+        } 
+        .play {
+            position: absolute;
+            left: 49%;
+            top: 45%;
+        }  
+         
+        
+    }
+}

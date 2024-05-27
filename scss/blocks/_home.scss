@@ -1,0 +1,107 @@
+.home {
+    height: 988px;
+    background-image: url("../images/home/bg-image.png");
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    //padding-left: 285px;
+    .container__home {
+        color: white;
+        margin-top: 220px;
+        h1 {
+            @include font(700, 72px);
+            line-height: 93.6px;
+            padding-bottom: 24px;
+            span {
+                color: #FF5A30;
+            }
+        }
+        p {
+            @include font(400,20px);
+            line-height: 30px;
+            padding-bottom: 61px;
+        }
+        .container__home-btns {
+            button {
+                @include font(700,16px);
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+                height: 52px;
+                border-radius: 4px;
+                margin-right: 24px;
+            }   
+            .learn {
+                width: 278px;
+                background-color: rgba(255, 255, 255, 0);
+                border: 1px solid white;
+            }
+            .submit {
+                width: 224px;
+                background-color: #FF5A30;
+            }
+        }
+        .home_navigation {
+            display: flex;
+            gap: 4px;
+            padding-top: 179px;
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                h1 {
+                    @include font(700, 28px);
+                    height: 60px;
+                    padding-bottom: 0px;
+                    color: white;
+                    opacity: 0.6;
+                }
+                div {
+                    width: 178px;
+                    height: 2px;
+                    background-color: rgba(255, 255, 255, 0.3);
+                }
+            }
+        }
+    }
+    .slider_arrow-left, .slider_arrow-right {
+        width: 48px;
+        height: 48px;
+        background-image: url(../images/home/prev-btn.svg);
+        background-size: cover;
+        &:hover {
+            background-image: url(../images/home/hover.svg);
+            background-size: cover;
+            transform: rotate(-180deg);
+
+        }
+    }
+    
+
+    .navigation-block {
+        
+        height: 48px;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto 0;
+        &:first-child {
+            transform: translateX(-265px);
+        }
+        &:last-child {
+            transform: translateX(265px);
+        }
+    }
+    .slider_arrow-right {
+        
+        transform: rotate(-180deg);
+        &:hover {
+            transform: rotate(-360deg);
+        }
+    }
+}
+.main_container {
+    padding-right: 513px;
+}

@@ -1,0 +1,31 @@
+// Base
+
+@import "./reset.scss";
+@import "./variables.scss";
+
+
+// Blocks
+
+@import "../blocks/header.scss";
+@import "../blocks/home.scss";
+@import "../blocks/video.scss";
+@import "../blocks/characteristics.scss";
+@import "../blocks/services.scss";
+@import "../blocks/projects.scss";
+@import "../blocks/partners.scss";
+@import "../blocks/news.scss";
+@import "../blocks/input.scss";
+@import "../blocks/footer.scss";
+
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    font-family: Ubuntu, sans-serif;
+}
+
+// Media
+
+@import "./media.scss";
+

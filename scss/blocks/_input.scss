@@ -1,0 +1,77 @@
+.registration-section {
+    height: 826px;
+    background-image: url(../images/input/image.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .registration-container {
+        display: flex;
+        justify-content: end;
+        width: 1920px - (345 * 2);
+    }
+    .input_registration {
+        background-color: white;
+        width: 495px;
+        //margin-right: 345px;
+        height: 666px;
+        grid-column: 8 / 12;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(229, 232, 237, 1);
+        h1 {
+            @include font(700,28px);
+            padding-top: 48px;
+            align-items: center;
+            padding-bottom: 24px;
+        }
+        button {
+            width: 174px;
+            height: 44px;
+            background: rgba(255, 90, 48, 1);
+            border: 4px;
+            color: white;
+            text-transform: uppercase;
+            @include font(700,14px);
+            margin-bottom: 48px;
+            
+        }
+        .input_registration-container {
+            width: 415px;
+            height: 570px;
+            input:not(input[type="checkbox"]) {
+                &::placeholder {
+                    padding-left: 16px;
+                    padding-top: 11px;
+                    
+                }
+                width: 415px;
+                height: 44px;
+                border: 1px solid rgba(215, 218, 221, 1);
+                background-color: rgba(244, 245, 246, 1);
+                margin-bottom: 20px;
+                border-radius: 4px;
+            }
+            #input_message {
+                padding-top: 19px;
+                padding-bottom: 44px;
+            }
+            p {
+                padding-bottom: 8px;
+            }
+        }  
+        .checkbox {
+            display: flex;
+            align-items: start;
+            margin-bottom: 24px;
+            label {
+                @include font(400,14px);
+                line-height: 21px;
+                color: rgb(34, 35, 37);
+            }
+        }
+        
+    }
+}

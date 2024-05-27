@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    height: 92px;
+    .header__logo {
+        margin-right: 60px;
+    }
+    .header__contacks {
+        display: flex;
+        gap: 36px;
+        &_item {
+            display: flex;
+            gap: 20px;
+            &-content {
+                p {
+                    line-height: 27px;
+                    @include font(400,18px);
+                    a {
+                        color: #424551;
+                    }
+                }
+                .direction {
+                    @include font(700,14px);
+                }
+                
+            }
+        }
+    }
+    .header-burger {
+        display: none;
+        max-width: 32px;
+        max-height: 32px;
+        z-index: 2;
+        position: relative;
+        
+    }
+    nav {
+        margin-right: 172px;
+        ul {
+            display: flex;
+            gap: 40px;
+            a {
+                @include font(700,16px);
+                color: #424551;
+            }
+        }
+    }
+}
